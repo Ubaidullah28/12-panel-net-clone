@@ -58,33 +58,35 @@
   </div>
 </nav>
    
-    <nav class="navbar pb-1 pt-1 ms-4 bg-white border-bottom py-3">
-      <div class="container-fluid">
-        <a class="navbar-brand d-flex align-items-center" href="#">
-          <span>
-            <span style="color:#d0021b; font-weight:bold; font-size:2rem;">12</span>
-            <span style="color:#22223b; font-weight:bold; font-size:1.5rem;">PANEL</span>
-            <span style="color:#d0021b; font-style:italic; font-size:1.5rem;">NOW.com</span>
-            <sup>TM</sup>
-          </span>
+   <nav class="navbar pb-1 pt-1 bg-white border-bottom py-3">
+  <div class="container-fluid px-2 px-md-4">
+    <div class="d-flex flex-column flex-md-row align-items-center justify-content-between w-100">
+      <a class="navbar-brand d-flex align-items-center mb-2 mb-md-0" href="#">
+        <span>
+          <span style="color:#d0021b; font-weight:bold; font-size:2rem;">12</span>
+          <span style="color:#22223b; font-weight:bold; font-size:1.5rem;">PANEL</span>
+          <span style="color:#d0021b; font-style:italic; font-size:1.5rem;">NOW.com</span>
+          <sup>TM</sup>
+        </span>
+      </a>
+      <form class="d-flex flex-grow-1 mx-0 mx-md-4 mb-2 mb-md-0" style="max-width:430px;">
+        <input class="form-control me-0 rounded-0 rounded-start" type="search" placeholder="Search..." aria-label="Search">
+        <button class="btn btn-danger rounded-0 rounded-end" type="submit">
+          <i class="bi bi-search"></i>
+        </button>
+      </form>
+      <div class="d-flex align-items-center">
+        <a href="#" class="me-2 position-relative" style="color:#22223b;">
+          <i class='bx bx-cart' style="font-size: 1.7rem;"></i>
         </a>
-        <form class="d-flex flex-grow-1 mx-4" style="max-width:430px;">
-          <input class="form-control me-0 rounded-0 rounded-start" type="search" placeholder="Search..." aria-label="Search">
-          <button class="btn btn-danger rounded-0 rounded-end" type="submit">
-            <i class="bi bi-search"></i>
-          </button>
-        </form>
-        <div class="d-flex align-items-center">
-         <a href="#" class="me-2 position-relative" style="color:#22223b;">
-            <i class='bx bx-cart' style="font-size: 1.7rem;"></i>
-          <div class="vr mx-2"></div>
-         <a href="#loginform.html" style="color:#22223b;" data-bs-toggle="modal" data-bs-target="#loginModal">
+        <div class="vr mx-2 d-none d-md-block"></div>
+        <a href="#loginform.html" style="color:#22223b;" data-bs-toggle="modal" data-bs-target="#loginModal">
           <i class='bx bx-user' style="font-size: 1.6rem;"></i>
         </a>
-        </div>
       </div>
-    </nav>
-
+    </div>
+  </div>
+</nav>
     
     
   <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
@@ -185,45 +187,59 @@
 
 
 
-
-
-
-    <div class="container-fluid bg-main-section" id="containerP1">
-    <div class="row ms-0 ms-lg-5 pt-3 mt-5 ">
-    <h5>Drug Free Is The Way To Be</h3>
-    <h1 class="display-3 fw-bold" style="margin-top: -1.5%; color:#d0021b">12 Panel Now Offers</h1>
-    <h1 class="display-3 fw-bold" style="margin-top: -1.5%; color:#000000">Various Drug Testing Supplies</h1>
-    <h5>Get Drug Tests In Bulk At Affordable Prices</h3>
-        <p>
-            More than <b>30 different substances</b> can be found using the various tests that <b>12 Panel Now</b> provides. Drug <br>
-            tests can be purchased in bulk at subsidized rates. <b>Government agencies, wholesalers, and distributors</b> <br>
-            are also welcome, and significant facilities can request special pricing. We provide <b>12 panel urine drug tests <br>
-            for as little as $1.29 per cup</b> , drug test strips, cups, carts, dip cards, and oral swabs tests at the lowest <br>
-            costs possible. Additionally, we provide drug testing in bulk quantities and for <b>single-use at-home tests for <br>
-            as little as $0.29 each!</b> <br>
-        </p>
+<div class="container-fluid bg-main-section" id="containerP1" style="background-color: rgb(153, 209, 234);">
+  <div class="row mx-0 px-2 px-lg-0 pt-3 mt-5 justify-content-center" >
+    <div class="col-12 col-lg-10">
+      <h5>Drug Free Is The Way To Be</h5>
+      <h1 class="display-3 fw-bold" style="margin-top: -1.5%; color:#d0021b">12 Panel Now Offers</h1>
+      <h1 class="display-3 fw-bold" style="margin-top: -1.5%; color:#000000">Various Drug Testing Supplies</h1>
+      <h5>Get Drug Tests In Bulk At Affordable Prices</h5>
+      <p class="desc-breaks">
+        More than <b>30 different substances</b> can be found using the various tests that <b>12 Panel Now</b> provides. Drug <br>
+        tests can be purchased in bulk at subsidized rates. <b>Government agencies, wholesalers, and distributors</b> <br>
+        are also welcome, and significant facilities can request special pricing. We provide <b>12 panel urine drug tests <br>
+        for as little as $1.29 per cup</b> , drug test strips, cups, carts, dip cards, and oral swabs tests at the lowest <br>
+        costs possible. Additionally, we provide drug testing in bulk quantities and for <b>single-use at-home tests for <br>
+        as little as $0.29 each!</b> <br>
+      </p>
     </div>
+  </div>
+</div>
+
+<style>
+/* Remove <br> in .desc-breaks on mobile */
+@media (max-width: 767.98px) {
+  .desc-breaks br {
+    display: none;
+  }
+}
+</style>
 
 
-   <div class="row mt-5 g-3">
-  <div class="col-12 col-md-4">
-    <div class="p-3 text-white h-100 d-flex flex-column align-items-center justify-content-center" style="background-color:rgb(48, 55, 62); min-height: 120px;">
+
+                      
+<div class="row mt-5 g-0 mx-0">
+  <div class="col-12 col-md-4 p-0">
+    <div class="p-3 text-white h-100 d-flex flex-column align-items-center justify-content-center"
+         style="background-color:rgb(48, 55, 62); min-height: 120px;">
       <div class="text-center">
         Blowout Sale<br> as low as $1.99 each<br> Home or POC
       </div>
       <button class="btn btn-danger btn-sm mt-3 px-3 py-1">Click Now</button>
     </div>
   </div>
-  <div class="col-12 col-md-4">
-    <div class="p-3 bg-dark text-white h-100 d-flex flex-column align-items-center justify-content-center" style="min-height: 120px;">
+  <div class="col-12 col-md-4 p-0">
+    <div class="p-3 bg-dark text-white h-100 d-flex flex-column align-items-center justify-content-center"
+         style="min-height: 120px;">
       <div class="text-center">
         Same Day Free Shipping Available<br>
         OverStock Blowout Sale
       </div>
     </div>
   </div>
-  <div class="col-12 col-md-4">
-    <div class="p-3 text-white h-100 d-flex flex-column align-items-center justify-content-center" style="background-color:rgb(48, 55, 62); min-height: 120px;">
+  <div class="col-12 col-md-4 p-0">
+    <div class="p-3 text-white h-100 d-flex flex-column align-items-center justify-content-center"
+         style="background-color:rgb(48, 55, 62); min-height: 120px;">
       <div class="text-center">
         Create An Account<br>
         Get discounts
@@ -232,8 +248,7 @@
     </div>
   </div>
 </div>
-</div>
-  </div>
+
 
     <a href="#" id="backToTop" 
    class="btn btn-danger rounded-circle shadow" 
