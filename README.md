@@ -1,6 +1,6 @@
 12 Panel Clone - Frontend Project
 
-link 
+link: 
 12panelclone.netlify.app/
 
 A responsive 12-panel clone website built purely with HTML, SASS, Bootstrap, and JavaScript. This project focuses on replicating a clean, modern multi-panel layout for frontend development practice.
