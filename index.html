@@ -890,7 +890,7 @@ products3.forEach(product => {
 
 <script>
   const backToTop = document.getElementById('backToTop');
-  const firstContainer = document.getElementById('containerP1'); // ✅ Correct container ID
+  const firstContainer = document.getElementById('containerP1');
 
   window.addEventListener('scroll', function() {
     if (window.scrollY > firstContainer.offsetHeight) {
@@ -902,10 +902,12 @@ products3.forEach(product => {
 
   backToTop.addEventListener('click', function(e) {
     e.preventDefault();
-    window.scrollTo({
+    document.documentElement.scrollTo({
       top: 0,
       behavior: 'smooth'
     });
+  
+   
   });
 </script>
 
