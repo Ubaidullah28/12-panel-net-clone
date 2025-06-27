@@ -772,8 +772,8 @@ const products1 = [
 products1.forEach(product => {
   container1.innerHTML += `
      <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 d-flex">
-  <div class="card w-100 text-center border-0 product-card-mobile">
-    <div class="position-relative p-3">
+  <div class="card w-100 text-center border border-2 border-secondary product-card-mobile" style="border-radius: 12px;">
+    <div class="position-relative p-3 border-bottom border-2 border-secondary" style="border-top-left-radius: 12px; border-top-right-radius: 12px;">
       <img src="${product.image}" 
            class="card-img-top rounded mx-auto d-block product-img-mobile" 
            alt="${product.title}" 
@@ -783,7 +783,7 @@ products1.forEach(product => {
         ${'<i class="bi bi-star text-warning"></i>'.repeat(5)}
       </div>
     </div>
-    <div class="card-body pt-0">
+    <div class="card-body pt-0 border-0" style="border-bottom-left-radius: 12px; border-bottom-right-radius: 12px;">
       <h6 class="fw-semibold mb-1" 
           style="font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;">${product.title}</h6>
       <p class="mb-0 small text-muted">as low as</p>
@@ -805,6 +805,27 @@ products1.forEach(product => {
   `;
 });
 </script>
+
+<style>
+@media (max-width: 575.98px) {
+  .product-card-mobile {
+    border: 1px solid #adb5bd !important;
+    border-radius: 12px !important;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  }
+  .product-card-mobile .p-3 {
+    border-bottom: 0px solid #adb5bd !important;
+    border-top-left-radius: 12px !important;
+    border-top-right-radius: 12px !important;
+    padding: 0 !important;
+  }
+  .product-card-mobile .card-body {
+    border-bottom-left-radius: 12px !important;
+    border-bottom-right-radius: 12px !important;
+  }
+}
+</style>
 
 
 <style>
