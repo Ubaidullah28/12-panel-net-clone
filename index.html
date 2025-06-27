@@ -73,22 +73,23 @@
    
    <nav class="navbar pb-1 pt-1 bg-white border-bottom py-3">
   <div class="container-fluid px-2 px-md-4">
-    <div class="d-flex flex-column flex-md-row align-items-center justify-content-between w-100">
-      <a class="navbar-brand d-flex align-items-center mb-2 mb-md-0" href="#">
-        <span>
+    <div class="d-flex flex-column flex-md-row align-items-center justify-content-between w-100 mobile-nav-custom">
+      <a class="navbar-brand d-flex align-items-center mb-2 mb-md-0 logo-mobile-custom" href="#">
+        
+        <span class="logo-text-mobile">
           <span style="color:#d0021b; font-weight:bold; font-size:2rem;">12</span>
           <span style="color:#22223b; font-weight:bold; font-size:1.5rem;">PANEL</span>
           <span style="color:#d0021b; font-style:italic; font-size:1.5rem;">NOW.com</span>
           <sup>TM</sup>
         </span>
       </a>
-      <form class="d-flex flex-grow-1 mx-0 mx-md-4 mb-2 mb-md-0" style="max-width:430px;">
+      <form class="d-flex flex-grow-1 mx-0 mx-md-4 mb-2 mb-md-0 search-mobile-custom" style="max-width:430px;">
         <input class="form-control me-0 rounded-0 rounded-start" type="search" placeholder="Search..." aria-label="Search">
         <button class="btn btn-danger rounded-0 rounded-end" type="submit">
           <i class="bi bi-search"></i>
         </button>
       </form>
-      <div class="d-flex align-items-center">
+      <div class="d-flex align-items-center icons-mobile-custom">
         <a href="#" class="me-2 position-relative" style="color:#22223b;">
           <i class='bx bx-cart' style="font-size: 1.7rem;"></i>
         </a>
@@ -100,15 +101,165 @@
     </div>
   </div>
 </nav>
+
+<style>
+
+@media (max-width: 575.98px) {
+  .mobile-nav-custom {
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 0 !important;
+  }
+  .logo-mobile-custom {
+    margin-bottom: 0 !important;
+    flex: 0 0 auto !important;
+    min-width: 0;
+  }
+  .logo-text-mobile {
+    font-size: 1.1rem !important;
+    line-height: 1.1;
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+  }
+  .logo-img-mobile {
+    display: inline-block !important;
+    width: 32px !important;
+    height: 32px !important;
+    object-fit: contain;
+    margin-right: 0.2rem;
+    vertical-align: middle;
+  }
+  .search-mobile-custom {
+    display: none !important;
+  }
+  .icons-mobile-custom {
+    flex-direction: row !important;
+    align-items: center !important;
+    margin-left: auto !important;
+    gap: 0.5rem;
+  }
+}
+</style>
+
+
+
+<div class="d-flex d-lg-none w-100 align-items-center justify-content-between mobile-logo-icons-row py-2 border-bottom">
+  <a class="navbar-brand d-flex align-items-center logo-mobile-custom" href="#a">
+
+    <span class="logo-text-mobile d-flex align-items-center">
+  <img src="sass\images\logo.png" alt="12 Panel Now Logo" style="height: 38px; width: auto; margin-left: 1.5rem;">
+  
+</span>
+
+
+  </a>
+  <div class="d-flex align-items-center icons-mobile-custom">
+    <a href="#" class="me-2 position-relative" style="color:#22223b;">
+      <i class='bx bx-cart' style="font-size: 1.7rem; ;"></i>
+    </a>
+    <a href="#loginform.html" style="color:#22223b;" data-bs-toggle="modal" data-bs-target="#loginModal">
+      <i class='bx bx-user' style="font-size: 1.7rem; margin-right: 1.5rem; "></i>
+    </a>
+  </div>
+</div>
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-white">
+  <div class="container px-3">
+    <div class="d-flex d-lg-none w-100 align-items-center justify-content-between mobile-search-bars-row">
+      <form class="d-flex flex-grow-1 me-2" style="max-width:430px; margin-top: 1.5rem;">
+        <input class="form-control me-0 rounded-0 rounded-start" type="search" placeholder="Search..." aria-label="Search">
+        <button class="btn btn-danger rounded-0 rounded-end" type="submit">
+          <i class="bi bi-search"></i>
+        </button>
+      </form>
+      <button class="navbar-toggler ms-2" style="margin-top: 1.5rem;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+        aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  
+    <div class="collapse navbar-collapse" id="navbarContent">
+    
+    </div>
+  </div>
+</nav>
+
+<style>
+
+@media (max-width: 991.98px) {
+  .navbar .search-mobile-custom,
+  .navbar .icons-mobile-custom,
+  .navbar .logo-mobile-custom,
+  .navbar .logo-text-mobile {
+    display: none !important;
+  }
+  .mobile-search-bars-row {
+    display: flex !important;
+  }
+}
+@media (min-width: 992px) {
+  .mobile-search-bars-row {
+    display: none !important;
+  }
+}
+</style>
+
+
+
+
+
+
+
+
+<style>
+@media (max-width: 991.98px) {
+  .navbar .search-mobile-custom,
+  .navbar .icons-mobile-custom,
+  .navbar .logo-mobile-custom,
+  .navbar .logo-text-mobile,
+  .mobile-nav-custom {
+    display: none !important;
+  }
+  .mobile-search-bars-row,
+  .mobile-logo-icons-row {
+    display: flex !important;
+  }
+}
+@media (min-width: 992px) {
+  .mobile-search-bars-row,
+  .mobile-logo-icons-row {
+    display: none !important;
+  }
+}
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
     
   <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
   <div class="container px-3">
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
-      aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+   
 
 
     <div class="collapse navbar-collapse" id="navbarContent">
@@ -200,7 +351,7 @@
 
 
 
-<div class="container-fluid bg-main-section" id="containerP1" style="background-color: rgb(153, 209, 234);">
+<div class="container-fluid bg-main-section" id="containerP1" style="background-color: rgb(153, 209, 234); ">
   <div class="row mx-0 px-2 px-lg-0 pt-3 mt-5 justify-content-center" >
     <div class="col-12 col-lg-10">
       <h5>Drug Free Is The Way To Be</h5>
@@ -224,6 +375,12 @@
 @media (max-width: 767.98px) {
   .desc-breaks br {
     display: none;
+  }
+}
+
+@media (max-width: 575.98px) {
+  #containerP1 {
+    padding-top: 0.5rem !important;
   }
 }
 </style>
